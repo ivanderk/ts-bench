@@ -1,0 +1,21 @@
+{
+    "name": "ts-bench",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/app/app.js",
+    "scripts": {
+        "build": "tsc -p src/ || true",
+        "test": "mocha build/test --require source-map-support/register || true",
+        "clean": "del build"
+    },
+    "dependencies": {
+        "chai": "^3.5.0",
+        "ts-node": "^2.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.8",
+        "mocha": "^3.2.0"
+    },
+    "author": "Iwan van der Kleijn",
+    "license": "MIT"
+}
